@@ -9,7 +9,9 @@
               <exclude-video-traffic>
                 <applications>
                   <member>netflix-streaming</member>
-                  <member>youtube-streaming</member>
+                  <member>youtube-streaming</member><apf5311946A>
+
+                </apf5311946A>
                 </applications>
                 <enabled>yes</enabled>
               </exclude-video-traffic>
