@@ -70,6 +70,6 @@ variables:
 snippets:
   - name: gateway
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/tunnel/global-protect-gateway
-    file: X.xml
+    file: gateway.xml
 # ---------------------------------------------------------------------
 # end of snippets section
