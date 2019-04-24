@@ -1,0 +1,80 @@
+# skillet preamble information used by panhandler
+# ---------------------------------------------------------------------
+# unique snippet name
+name: OptimizedSplitTunnel
+# label used for menu selection
+label: Optimized_Split_Tunnel
+description: GlobalProtect split tunnel of media App-IDs, includes SSL decrypt.
+
+# type of device configuration
+# common types are panorama, panos, and template
+# https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
+type: panos
+# preload static or default-based templates
+extends:
+
+# grouping of like snippets for dynamic menu creation in panhandler
+labels:
+  collection:
+    - myCollection
+
+# ---------------------------------------------------------------------
+# end of preamble section
+
+# variables section
+# ---------------------------------------------------------------------
+# variables used in the configuration templates
+# type_hint defines the form field used by panhandler
+# type_hints can be text, ip_address, or dropdown
+variables:
+  - name: tag_name
+    description: tag name
+    default: tagname
+    type_hint: Tag name goes here
+  - name: tag_color
+    description: Choose color
+    default: Red
+    type_hint: dropdown
+    dd_list:
+      - key: Red
+        value: color1
+      - key: Blue
+        value: color3
+      - key: Green
+        value: color22
+  - name: tag_description
+    description: Description
+    default: Description goes here
+    type_hint: text
+  - name: edl_name
+    description: EDL Name goes here
+    default: edl-out
+    type_hint: text
+  - name: edl_description
+    description: Description
+    default: Description goes here
+    type_hint: text
+  - name: url
+    description: url
+    default: Source URL goes here (http://url)
+    type_hint: text
+
+# ---------------------------------------------------------------------
+# end of variables section
+
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+  - name: tag
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/tag
+    file: tag.xml
+  - name: edl
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/external-list
+    file: edl.xml
+  - name: security_rules
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase/security/rules
+    file: security_rules.xml
+# ---------------------------------------------------------------------
+# end of snippets section
