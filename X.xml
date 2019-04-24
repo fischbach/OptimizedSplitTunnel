@@ -1,13 +1,11 @@
-<entry name="{{ gateway_name }}-N">
+<entry name="Gateway-1-N">
             <local-address>
               <ip>
                 <ipv4>{{ gateway_ip }}</ipv4>
               </ip>
               <interface>{{ gateway_intf }}</interface>
             </local-address>
-            <client><apf5311946A>
-
-            </apf5311946A>
+            <client>
               <exclude-video-traffic>
                 <applications>
                   <member>netflix-streaming</member>
