@@ -3,7 +3,7 @@
               <ip>
                 <ipv4>{{ gateway_ip }}</ipv4>
               </ip>
-              <interface>{{ gateway_intf }}</interface>
+              <interface>{{ gateway_interface }}</interface>
             </local-address>
             <client>
               <exclude-video-traffic>

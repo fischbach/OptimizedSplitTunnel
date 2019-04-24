@@ -54,7 +54,17 @@ variables:
 #        value: Ethernet1/2
 #      - key: Ethernet1/3
 #        value: Ethernet1/3
-#
+  - name: gateway_interface
+    description: Choose the physical interface to use
+    default: Ethernet1/1
+    type_hint: dropdown
+    dd_list:
+      - key: Ethernet1/1
+        value: Ethernet1/1
+      - key: Ethernet1/2
+        value: Ethernet1/2
+      - key: Ethernet1/3
+        value: Ethernet1/3
   - name: tunnel_name
     description: Name of the tunnel (tunnel.100)
     default: tunnel.100
