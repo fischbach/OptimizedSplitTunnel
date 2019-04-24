@@ -60,7 +60,7 @@ snippets:
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/tunnel/global-protect-gateway
     file: gateway.xml
 #
-- name: decrypt
+  - name: decrypt
     xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/setting/ssl-decrypt
     file: decrypt.xml
 :
