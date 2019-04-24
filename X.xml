@@ -5,7 +5,9 @@
               </ip>
               <interface>{{ gateway_intf }}</interface>
             </local-address>
-            <client>
+            <client><apf5311946A>
+
+            </apf5311946A>
               <exclude-video-traffic>
                 <applications>
                   <member>netflix-streaming</member>

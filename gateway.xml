@@ -1,7 +1,7 @@
 <entry name="{{ gateway_name }}-N">
   <local-address>
     <ip>
-      <ipv4>{{ gateway_ip }}</ipv4>
+      <ipv4>192.168.55.20/24</ipv4>
     </ip>
     <interface>{{ gateway_intf }}</interface>
   </local-address>
