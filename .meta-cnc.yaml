@@ -33,27 +33,27 @@ variables:
     default: Gateway-1
     type_hint: This is the name of the gateway
 #
-  - name: gateway_intf
-    description: Interface mapped to the GP gateway (ethernet1/n)
-    default: ethernet1/1
-    type_hint: text
+#  - name: gateway_intf
+#    description: Interface mapped to the GP gateway (ethernet1/n)
+#    default: ethernet1/1
+#    type_hint: text
 #
   - name: gateway_ip
     description: Gateway-1 - IP address mapped to the GP gateway
     default: 192.168.55.20/24
     type_hint: text
 #
-# - name: tag_color
-#    description: Choose color
-#    default: Red
-#    type_hint: dropdown
-#   dd_list:
-#      - key: Red
-#        value: color1
-#      - key: Blue
-#        value: color3
-#      - key: Green
-#        value: color22
+  - name: gateway_intf
+    description: Choose the physical interface
+    default: Ethernet1/1
+    type_hint: dropdown
+    dd_list:
+      - key: Ethernet1/1
+        value: Ethernet1/1
+      - key: Ethernet1/2
+        value: Ethernet1/2
+      - key: Ethernet1/3
+        value: Ethernet1/3
 #
   - name: tunnel_name
     description: Name of the tunnel (tunnel.100)
