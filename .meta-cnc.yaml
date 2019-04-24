@@ -54,12 +54,6 @@ variables:
         value: Ethernet1/2
       - key: Ethernet1/3
         value: Ethernet1/3
-      - key: Ethernet1/4
-        value: Ethernet1/4
-      - key: Ethernet1/5
-        value: Ethernet1/5
-      - key: Ethernet1/6
-        value: Ethernet1/6
 #
   - name: tunnel_name
     description: Name of the tunnel (tunnel.100)
