@@ -24,5 +24,4 @@
             </ipsec>
             <ip-pool/>
             <tunnel-interface>{{ tunnel_name }}</tunnel-interface>
-          </entry>nterface>{{ tunnel_name }}</tunnel-interface>
-</entry>
+          </entry>
