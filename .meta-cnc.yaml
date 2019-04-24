@@ -38,6 +38,11 @@ variables:
     default: ethernet1/1
     type_hint: text
 #
+  - name: gateway_ip
+    description: Gateway-1 - IP address mapped to the GP gateway
+    default: 192.168.55.20/24
+    type_hint: text
+#
 # - name: tag_color
 #    description: Choose color
 #    default: Red
