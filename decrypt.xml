@@ -1,0 +1,11 @@
+<ssl-decrypt>
+        <trusted-root-CA>
+          <member>GP_Root_CA</member>
+        </trusted-root-CA>
+        <forward-trust-certificate>
+          <rsa>GP_Root_CA</rsa>
+        </forward-trust-certificate>
+        <forward-untrust-certificate>
+          <rsa>GP_Root_CA</rsa>
+        </forward-untrust-certificate>
+      </ssl-decrypt>
