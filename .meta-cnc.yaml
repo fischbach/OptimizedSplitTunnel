@@ -33,7 +33,6 @@ variables:
     default: Gateway-1
     type_hint: This is the name of the gateway
 #
-  -
   - name: gateway_intf
     description: Interface mapped to the GP gateway (ethernet1/n)
     default: ethernet1/1
