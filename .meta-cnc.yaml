@@ -4,7 +4,7 @@
 name: OptimizedSplitTunnel
 # label used for menu selection
 label: Optimized_Split_Tunnel
-description: GlobalProtect split tunnel of media App-IDs.
+description: GlobalProtect split tunnel of media App-IDs. Repeat to add additional apps.
 
 # type of device configuration
 # common types are panorama, panos, and template

@@ -18,3 +18,5 @@ Step 4: Firewall sends a video redirect message to GP App / GP Agent.
 Step 5: GP agent disconnects the youtube session from the tunnel and add that ip to the exclude ip list.
 
 Step 6: GP agent establishes a new session to that youtube ip on the physical adapter.
+
+Repeat the skillet to add additional media App-IDs.
