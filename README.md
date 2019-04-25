@@ -1,5 +1,6 @@
 # OptimizedSplitTunnel
-GP - Split tunnel of media AppIDs
+Configure a split tunnel to exclude video streaming traffic
+
 Software Support: Starting with GlobalProtect™ App 4.1 and with PAN-OS® 8.1 and later releases
 OS Support:       Windows 7 Service Pack 2 and later releases and macOS 10.10 and later releases
 In addition to route-based split tunneling, the GlobalProtect app for Windows and macOS endpoints now supports split tunneling based on destination domain, client process, and HTTP/HTTPS video streaming application.

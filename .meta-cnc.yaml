@@ -48,6 +48,18 @@ variables:
     default: tunnel.100
     type_hint: text
 #
+  - name: streaming_app
+    description: name of the streaming app
+    default: netflix-streaming
+    type_hint: dropdown
+    dd_list:
+      - key: netflix-streaming
+        value: netflix-streaming
+      - key: youtube-streaming
+        value: youtube-streaming
+      - key: Green
+        value: color22
+#
 # ---------------------------------------------------------------------
 # end of variables section
 
@@ -57,7 +69,11 @@ variables:
 # files will load in the order listed
 #
 snippets:
-  - name: gateway
+#  - name: gateway
+#    xpath: /config/devices/entry[@name='localhost.localdomain']/network/tunnel/global-protect-gateway
+#    file: gateway.xml
+#
+  - name: apps
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/tunnel/global-protect-gateway
     file: gateway.xml
 #
