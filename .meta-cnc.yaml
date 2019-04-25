@@ -57,8 +57,18 @@ variables:
         value: netflix-streaming
       - key: youtube-streaming
         value: youtube-streaming
-      - key: Green
-        value: color22
+      - key: sling
+        value: sling
+      - key: vimeo-base
+        value: vimeo-base
+      - key: xfinity-tv
+        value: xfinity-tv
+      - key: youku-base
+        value: youku-base
+      - key: hulu-base
+        value: hulu-base
+      - key: dailymotion
+        value: dailymotion
 #
 # ---------------------------------------------------------------------
 # end of variables section
