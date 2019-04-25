@@ -1,6 +1,8 @@
 # OptimizedSplitTunnel
 GP - Split tunnel of media AppIDs
-
+Software Support: Starting with GlobalProtect™ App 4.1 and with PAN-OS® 8.1 and later releases
+OS Support:       Windows 7 Service Pack 2 and later releases and macOS 10.10 and later releases
+In addition to route-based split tunneling, the GlobalProtect app for Windows and macOS endpoints now supports split tunneling based on destination domain, client process, and HTTP/HTTPS video streaming application.
 
 GP agent will know the video traffic based on the app ID. Firewall sends a redirect message to the GP App as soon as it identifies the video traffic based on the app-id .
  
