@@ -48,27 +48,28 @@ variables:
     default: tunnel.100
     type_hint: text
 #
-  - name: streaming_app
-    description: name of the streaming app
-    default: netflix-streaming
-    type_hint: dropdown
-    dd_list:
-      - key: netflix-streaming
-        value: netflix-streaming
-      - key: youtube-streaming
-        value: youtube-streaming
-      - key: sling
-        value: sling
-      - key: vimeo-base
-        value: vimeo-base
-      - key: xfinity-tv
-        value: xfinity-tv
-      - key: youku-base
-        value: youku-base
-      - key: hulu-base
-        value: hulu-base
-      - key: dailymotion
-        value: dailymotion
+# This variable is used in the apps.xml code - comment out if not using this .xml
+#  - name: streaming_app
+#    description: name of the streaming app
+#    default: netflix-streaming
+#    type_hint: dropdown
+#    dd_list:
+#      - key: netflix-streaming
+#        value: netflix-streaming
+#      - key: youtube-streaming
+#        value: youtube-streaming
+#      - key: sling
+#        value: sling
+#      - key: vimeo-base
+#        value: vimeo-base
+#      - key: xfinity-tv
+#        value: xfinity-tv
+#      - key: youku-base
+#        value: youku-base
+#      - key: hulu-base
+#        value: hulu-base
+#      - key: dailymotion
+#        value: dailymotion
 #
 # ---------------------------------------------------------------------
 # end of variables section
