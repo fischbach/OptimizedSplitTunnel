@@ -4,7 +4,7 @@
 name: OptimizedSplitTunnel
 # label used for menu selection
 label: Optimized_Split_Tunnel
-description: GlobalProtect split tunnel of media App-IDs, includes SSL decrypt.
+description: GlobalProtect split tunnel of media App-IDs.
 
 # type of device configuration
 # common types are panorama, panos, and template
@@ -49,27 +49,27 @@ variables:
     type_hint: text
 #
 # This variable is used in the apps.xml code - comment out if not using this .xml
-#  - name: streaming_app
-#    description: name of the streaming app
-#    default: netflix-streaming
-#    type_hint: dropdown
-#    dd_list:
-#      - key: netflix-streaming
-#        value: netflix-streaming
-#      - key: youtube-streaming
-#        value: youtube-streaming
-#      - key: sling
-#        value: sling
-#      - key: vimeo-base
-#        value: vimeo-base
-#      - key: xfinity-tv
-#        value: xfinity-tv
-#      - key: youku-base
-#        value: youku-base
-#      - key: hulu-base
-#        value: hulu-base
-#      - key: dailymotion
-#        value: dailymotion
+  - name: streaming_app
+    description: name of the streaming app
+    default: netflix-streaming
+    type_hint: dropdown
+    dd_list:
+      - key: netflix-streaming
+        value: netflix-streaming
+      - key: youtube-streaming
+        value: youtube-streaming
+      - key: sling
+        value: sling
+      - key: vimeo-base
+        value: vimeo-base
+      - key: xfinity-tv
+        value: xfinity-tv
+      - key: youku-base
+        value: youku-base
+      - key: hulu-base
+        value: hulu-base
+      - key: dailymotion
+        value: dailymotion
 #
 # ---------------------------------------------------------------------
 # end of variables section
@@ -80,13 +80,13 @@ variables:
 # files will load in the order listed
 #
 snippets:
-  - name: gateway
-    xpath: /config/devices/entry[@name='localhost.localdomain']/network/tunnel/global-protect-gateway
-    file: gateway.xml
-
-#  - name: apps
+#  - name: gateway
 #    xpath: /config/devices/entry[@name='localhost.localdomain']/network/tunnel/global-protect-gateway
 #    file: gateway.xml
+
+  - name: apps
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/tunnel/global-protect-gateway
+    file: gateway.xml
 #
 #  - name: decrypt
 #    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/setting/ssl-decrypt
