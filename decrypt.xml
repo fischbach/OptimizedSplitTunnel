@@ -1,11 +1,11 @@
 <ssl-decrypt>
         <trusted-root-CA>
-          <member>GP_Root_CA</member>
+          <member>{{ trusted_root_ca_name }}</member>
         </trusted-root-CA>
         <forward-trust-certificate>
-          <rsa>GP_Root_CA</rsa>
+          <rsa>{{ trusted_root_ca_name }}</rsa>
         </forward-trust-certificate>
         <forward-untrust-certificate>
-          <rsa>GP_Root_CA</rsa>
+          <rsa>{{ trusted_root_ca_name }}</rsa>
         </forward-untrust-certificate>
       </ssl-decrypt>

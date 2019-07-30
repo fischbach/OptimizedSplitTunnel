@@ -1,4 +1,4 @@
-<entry name="Gateway-1-N">
+<entry name="{{ gateway_name }}">
             <local-address>
               <ip>
                 <ipv4>{{ gateway_ip }}</ipv4>

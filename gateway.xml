@@ -1,4 +1,4 @@
-<entry name="Gateway-1-N">
+<entry name="{{ gateway_name }}">
             <local-address>
               <ip>
                 <ipv4>{{ gateway_ip }}</ipv4>
@@ -8,8 +8,7 @@
             <client>
               <exclude-video-traffic>
                 <applications>
-                  <member>netflix-streaming</member>
-                  <member>youtube-streaming</member>
+                  <member>{{ streaming-app }}</member>
                 </applications>
                 <enabled>yes</enabled>
               </exclude-video-traffic>
