@@ -59,5 +59,8 @@ variables:
 snippets:
 
   - name: apps
-    xpath: /config/devices/entry[@name='localhost.localdomain']/network/tunnel/global-protect-gateway
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/global-protect/global-protect-gateway
     file: apps.xml
+  - name: decrypt
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/global-protect/global-protect-gateway
+    file: decrypt.xml
